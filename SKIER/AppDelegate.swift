@@ -8,14 +8,24 @@
 
 import UIKit
 import CoreData
-
+import CoreLocation
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
+    //FIREBASE IMPORT BLYAT
+//    func application(_ application: UIApplication,
+//        didFinishLaunchingWithOptions launchOptions:
+//        [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        FirebaseApp.configure()
+//        return true
+//      }
+//    //FIREBASE IMPORT END BLYATTTTTTTTTTTTTTTTTTTTTTTT
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 

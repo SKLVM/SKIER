@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SKIER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GzM-dJ-osA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SKIER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsF-BB-miO">
+                                <rect key="frame" x="162" y="44" width="90" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CcA-EA-u3w"/>
+                            <constraint firstItem="FsF-BB-miO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IQN-Zo-MDS"/>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WPs-5o-lJF"/>
+                            <constraint firstAttribute="bottom" secondItem="GzM-dJ-osA" secondAttribute="bottom" id="Xwd-X0-gen"/>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="goM-1Y-jVF"/>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="goM-cF-FLU"/>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hJT-OJ-bg0"/>
+                            <constraint firstItem="FsF-BB-miO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lIR-EW-Vc5"/>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n5B-JC-kzO"/>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sKM-O6-JDb"/>
+                            <constraint firstItem="GzM-dJ-osA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tRg-ZM-hBa"/>
+                            <constraint firstAttribute="bottom" secondItem="GzM-dJ-osA" secondAttribute="bottom" id="x7g-5i-4T7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
     </scenes>
 </document>
